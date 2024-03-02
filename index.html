@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h1>click multiple times to know </h1>
+        <button style="background-color: rgba(238, 61, 238, 0.804); color:white; padding:5px; font-size: large; border:none" class="btn" onclick="addListItems()">Know Your girlfriend's name</button>
+        <div>
+          <ul class="myList">
+          </ul>
+        </div>
+      </div>
+
+    <script>
+        // const heading = document.createElement('h1');
+        
+        // const heading = document.querySelector('.heading');
+        // const ul = document.createElement('ul');
+        // const ul1 = heading.appendChild(ul);
+        // const li = document.createElement('li');
+        // const li1 = ul1.appendChild(li);
+        // li.innerText="list 1";
+
+        // const button = document.createElement('button');
+        // const ul = document.querySelector('.unorderList');
+        // ul.appendChild(button);
+        // button.innerText = "Click Me"
+        // button.style.backgroundColor = "wheat";
+        // let i =0;
+        // button.addEventListener('click',addListChild(i));
+
+        // function addListChild(i){
+        // const ul = document.querySelector('.unorderList');
+        // const li = document.createElement('li');
+        // const items = ul.appendChild(li);
+        // ul.appendChild(button);
+        // items.innerText=`${i}`;
+        // if(i>10){
+        //     i=0;
+        // }
+        // i++;
+        // }
+ let listItems = ['Dubey',"ki","girlfriends",'below', 'Madhu', 'khushi','priya', 'Nisha',"priyashi","anupurna","priyanka","rollix", 'babu', 'sona','kareja',''];
+        let i=0;
+            function addListItems(){
+                console.log("hi");
+                const ul = document.querySelector('.myList');
+                const li = document.createElement('li');
+                const items = ul.appendChild(li);
+                items.textContent = listItems[i];
+                i++;
+                if(i>=listItems.length){
+                document.querySelector('.btn').disabled = true;
+                }
+                
+            }
+
+
+    </script>
+</body>
+</html>
