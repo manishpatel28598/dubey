@@ -44,21 +44,19 @@
         // }
         // i++;
         // }
- let listItems = ['Dubey',"ki","girlfriends",'below', 'Madhu', 'khushi','priya', 'Nisha',"priyashi","anupurna","priyanka","rollix", 'babu', 'sona','kareja',''];
+ let listItems = ['Madhu', 'khushi','priya', 'Nisha',"priyashi","anupurna","priyanka","rollix","elisa","tara","lusy","lucifer","alina","raess"];
         let i=0;
             function addListItems(){
-                console.log("hi");
                 const ul = document.querySelector('.myList');
                 const li = document.createElement('li');
                 const items = ul.appendChild(li);
                 items.textContent = listItems[i];
                 i++;
                 if(i>=listItems.length){
-                document.querySelector('.btn').disabled = true;
+                i=0;
                 }
                 
             }
-
 
     </script>
 </body>
